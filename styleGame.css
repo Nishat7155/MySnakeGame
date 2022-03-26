@@ -1,0 +1,79 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    height: 50px;
+}
+.body{
+    background: rgb(220, 244, 255);
+    min-height: 100vh;
+    background-size:  100vw 100vh ;
+    display: flex; /* this helps to place our game box in the center */
+    align-items: center;
+    justify-content: center;
+    background-repeat: no-repeat;
+}
+
+h2{
+    display: block;
+    font-size: 45px;
+    margin-top: 25px;
+    font-weight: bold;
+    text-align: center;
+    color: rgb(3, 49, 148);
+}
+#box{
+    background:rgb(106, 235, 235);
+    width: 80vmin; /* the min of view height or width height */
+    height: 82vmin;
+      border: 2px solid black;
+      display: grid;
+      grid-template-columns:repeat(18,1fr); /* creating the gride of 18*18 row col as been created*/
+      grid-template-rows: repeat(18,1fr);
+      
+
+}
+
+
+
+.head{
+    background: rgb(142, 66, 212);
+    border: 2px solid rgb(43, 1, 43);
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    transform: scale(1.02);
+    text-shadow: black;
+}
+#scoreBox{
+    position: relatve;
+    top: 9px;
+    right: 137px;
+    font-size: 45px;
+    font-weight: bold;
+    font-family:Arial, Helvetica, sans-serif;
+    padding-left: 20px;
+}
+#hiscoreBox{
+    position: relative;
+    top: 44px;
+    right: 135px;
+    font-size: 45px;
+    font-weight: bold;
+    font-family:Arial, Helvetica, sans-serif;
+    padding-left: 20px;
+}
+.snake{
+    background-color: rgb(2, 29, 65);
+    border: .1vmin solid white;
+    border-radius: 40%;
+}
+
+.food{
+    background : rgb(209, 21, 7);
+    border-radius: 50%;
+    
+}
+#snakeBox{
+    background-color: rgb(6, 179, 89);
+    
+}
